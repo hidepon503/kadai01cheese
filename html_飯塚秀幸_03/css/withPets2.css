@@ -1,0 +1,246 @@
+header{
+  position:fixed ;
+  z-index: 999;
+}
+
+.top-img{
+  width: 100%;
+  height: 60vh;
+  background-image: url(/img/withPets/老人と猫.jpg);
+}
+.right-area {
+  margin-top: 18vh;
+}
+.left-area {
+  margin-top: 18vh;
+}
+@media screen and (max-width: 800px){
+  .left-area{
+    display: none;
+  }
+  .whyMeBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whyMe-img{
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+  }
+  .whyMeDiscription{
+    width: 100%;
+    text-align: ;
+  }
+}
+/* whiMeの写真 */
+.whyMe-img {
+  background-image: url(/img/withPets/立ち尽くすシニア.jpg);
+}
+
+/*==================================================
+　5-2-4 MENUがCLOSEに
+===================================*/
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn {
+  /*ボタン内側の基点となるためrelativeを指定。
+追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+  position: relative;
+  background: #233D7F;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+/*ボタン内側*/
+.openbtn span {
+  display: inline-block;
+  transition: all .4s;
+  /*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 2px;
+  border-radius: 5px;
+  background: #fff;
+  width: 45%;
+}
+.openbtn span:nth-of-type(1) {
+  top: 13px;
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 19px;
+}
+
+.openbtn span:nth-of-type(3) {
+  top: 25px;
+}
+
+.openbtn span:nth-of-type(3)::after {
+  content: "Menu";
+  /*3つ目の要素のafterにMenu表示を指定*/
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  color: #fff;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn.active span:nth-of-type(1) {
+  top: 14px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+  top: 26px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(3)::after {
+  content: "Close";
+  /*3つ目の要素のafterにClose表示を指定*/
+  transform: translateY(0) rotate(-45deg);
+  top: 5px;
+  left: 4px;
+}
+
+/* ハンバーガーメニュー終了 */
+/* トップ写真のキャッチコピー */
+.anshin{
+  text-shadow: 2px 3px 3px  #959595;
+}
+
+
+
+/* 戻るボタン */
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    vertical-align: middle;
+  }
+}
+
+// 上矢印
+.arrow_down::before,
+.arrow_up::before {
+  top: auto;
+  left: auto;
+  bottom: 8px;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(-45deg);
+}
+
+
+/* ========================================================
+ページトップに戻るボタン
+=========================================================*/
+#btn-backtotop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  transition: all 1s ease-out;
+  transition: bottom 0.2s ease-out;
+  opacity: 0;
+
+  @media screen and (max-width:767px) {
+    bottom: 10px;
+    right: 5px;
+  }
+
+  // スクロール時にJSから付与されるクラス
+  &.fadein {
+    opacity: 1;
+  }
+
+  // ホバー時の挙動
+  &:hover {
+    opacity: .8;
+    bottom: 34px;
+
+    @media screen and (max-width:767px) {
+      bottom: 10px;
+    }
+
+    &::after {
+      box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+
+      @media screen and (max-width:767px) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  // ボタンのベース
+  &::after {
+    content: "";
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: #000;
+    transition: all .3s;
+    transform: scale(0.8) rotate(45deg);
+    transition: background-color 0.5s ease-out;
+
+    @media screen and (max-width:767px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  // 矢印マーク
+  .arrow {
+    top: 72px;
+    left: 13px;
+
+    @media screen and (max-width:767px) {
+      top: 46px;
+      left: -1px;
+    }
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      z-index: 1;
+
+      @media screen and (max-width:767px) {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+

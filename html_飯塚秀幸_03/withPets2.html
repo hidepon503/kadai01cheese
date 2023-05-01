@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" discription="With Petsはシニアとペットが安心して暮らせる社会を実現させるサービスです。">
+  <link rel="stylesheet" href="/css/withPets2.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <title>With Pets</title>
+  <script src="https://cdn.tailwindcss.com/3.3.1"></script>
+  <link rel="stylesheet" type="text/css" href="css/5-2-4.css">
+</head>
+<body class="font-'Poltawski Nowy' font-serif">
+  <!-- ここからヘッダースタート -->
+  <header class="w-full  px-5 py-5 flex justify-between items-center bg-blue-200   ">
+    <a href="#home" id="home" class="">
+      <div id="" class="logo w-full  py-2 flex justify-start items-center">
+        <img src="/img/withPets/logo.png" class="w-36" alt="">
+        <div class="text-blue-900">
+          <h2>
+            引取り補償付きペット仲介サービス
+          </h2>
+          <h1 class="text-3xl">With Pets</h1>
+        </div>
+      </div>
+    </a>
+<!-- ハンバーガーメニュー -->
+    <div class="openbtn mr-2"><span></span><span></span><span></span></div>
+  </header>
+<!-- ヘッダーエンド -->
+  <main class="w-full flex">
+<!-- レフトエリアスタート-->
+    <section class="left-area mb:visible w-1/4  bg-blue-200">
+<!-- ログイン機能スタート -->
+      <div class="">
+        <section class="text-gray-600 body-font">
+          <div class="container px-3 mt-5 mx-auto flex flex-wrap items-center">
+            <div class="bg-gray-100 rounded-lg mx-2  mt-15 py-5 px-3 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+              <div class="relative mb-4">
+                <label for="full-name" class="leading-7 text-sm text-gray-600">Email</label>
+                <input type="text" id="full-name" name="full-name"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <div class="relative mb-4">
+                <label for="email" class="leading-7 text-sm text-gray-600">Password</label>
+                <input type="email" id="email" name="email"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button
+                class="text-sm text-white bg-blue-900 border-0 py-2 text-center focus:outline-none hover:bg-blue-300 rounded text-lg">ログイン</button>
+              <button class="text-sm text-white bg-blue-900 border-0 mt-5 py-2 text-center focus:outline-none hover:bg-blue-300 rounded text-lg">新規登録</button>
+              <p class="text-xs text-gray-500 mt-3"></p>
+            </div>
+          </div>
+      </div>
+<!-- 新規登録ボタンend -->
+<!-- ナビゲーションメニュースタート -->
+      <nav class="mx-4 my-10 py-5 pl-4  flex flex-col justify-center items-start text- ">
+        <ul>
+          <a href="#home" class="">
+            <p class="mb-20 text-xl anshin text-left text-4xl text-white  font-bold">HOME</p>
+          </a>
+          <a href="#about" class=""><p class="mb-20 text-xl anshin text-left text-4xl text-white  font-bold">ABOUT</p></a>
+          <a href="#whyMe" class=""><p class="mb-20 text-xl anshin text-left text-4xl text-white  font-bold">WHY ME</p></a>
+          <a href="system" class=""><p class="mb-20 text-xl anshin text-left text-4xl text-white  font-bold">SYSTEM</p></a>
+          <a href="contact" class="text-2xl anshin text-left text-xl text-white  font-bold"><p>CONTACT</p></a>
+        </ul>
+      </nav>
+<!--ナビゲーションメニューエンド -->
+
+    </section>
+<!-- レフトエリアエンド-->
+
+    
+<!-- ライトエリアスタート-->
+    <div class=" right-area w-full bg-gray-100">
+<!-- aboutスタート -->
+      <section class="about">
+        <div id="about" class="top-img bg-top py-10 px-5 flex flex-col justify-between bg-cover bg-left">
+          <h2 class="text-right text-4xl text-blue-800 font-semibold">
+            引取り補償が可能にする
+          </h2>
+          <h2 class="anshin text-left text-4xl text-white  font-bold">安心と愛情で繋がる、<br>
+            シニアとペットの暮らし</h2>
+          </div>
+          <div class="p-5">
+            <h2 id="" class="mb-5 text-2xl text-blue-800">ABOUT</h2>
+            <p>
+              With Petsは引取り補償付きのペット仲介サービスです。<br><br>
+              シニアがペットと暮らす中で、<br>
+              重い病になってしまうかもしれない、<br>
+              病でペットより先に亡くなってしまうかもしれない。<br><br>
+              そんな悩みや不安をWith Petsの引取り補償が解消し、シニアもペットも安心して暮らせる社会を実現します。
+            </p>
+            <p class="my-5 text-xs">
+              ＊With Petsはペットレンタルサービスではありません。ペットの返却は指定した条件の場合に限ります。
+            </p>
+          </div>
+      </section>
+<!-- about end -->
+<!-- whyMeスタート -->
+      <section id="whyMe" class="whyMe w-full p-5 ">
+        <div class="whyMeBox w-full p-5 flex">
+          <div class="whyMe-img w-1/2 bg-cover bg-left-bottom  "></div>
+          <div class="whyMeDiscription w-1/2 p-5">
+            <h2 class="mb-5 text-2xl text-blue-800">Why Me</h2>
+            <p>
+              この事業を考えたきっかけは愛犬とお散歩の際に<br>
+              「犬を抱いても良いですか？」<br>
+              と声をかけてくれた老夫婦の一言でした。<br><br>
+              
+              その方達は私の犬を抱くなり、まるで自分の愛犬の様に可愛がり、<br>
+              「この年になるともうペットは飼えない。<br>
+              　だって僕たちの方が先に死んでしまうかもしれないから。」<br>
+              といった悩みを打ち明けてくれました。<br><br>
+
+              しかし私は、<br>
+                「この人たちがペットと暮らせたらどれだけ幸せだろう？」<br>
+                「この人たちが安心してペットと暮らせるようにするには、<br>
+                　どうしたら良いだろう？」<br>
+                「来自分たちがペットと老後を暮らしやすい環境を作るには、<br>
+                　どうしたら良いだろう？<br><br>
+              このような考えで試行錯誤を繰り返した結果、「With Pets」<br>
+              という一つのサービスを作りました。
+            </p>
+          </div>
+        </div>
+      </section>
+<!-- whyMe end-->
+<!-- SYSTEMスタート -->
+      <section class="system">
+        <div class="w-full ">
+        <section class="text-gray-600 body-font overflow-hidden">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+              <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">SYSTEM</h1>
+              <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon
+                brooklyn asymmetrical.</p>
+              <div class="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
+                <button class="py-1 px-4 bg-indigo-500 text-white focus:outline-none">Monthly</button>
+                <button class="py-1 px-4 focus:outline-none">Annually</button>
+              </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+              <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                  <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
+                  <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Tumeric plaid portland
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-6">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Mixtape chillwave tumeric
+                  </p>
+                  <button
+                    class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                  <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                </div>
+              </div>
+              <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                <div class="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
+                  <span
+                    class="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+                  <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
+                  <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                    <span>$38</span>
+                    <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                  </h1>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Tumeric plaid portland
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Hexagon neutra unicorn
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-6">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Mixtape chillwave tumeric
+                  </p>
+                  <button
+                    class="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                  <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                </div>
+              </div>
+              <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                  <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BUSINESS</h2>
+                  <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                    <span>$56</span>
+                    <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                  </h1>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Tumeric plaid portland
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Hexagon neutra unicorn
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-6">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Mixtape chillwave tumeric
+                  </p>
+                  <button
+                    class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                  <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                </div>
+              </div>
+              <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                  <h2 class="text-sm tracking-widest title-font mb-1 font-medium">SPECIAL</h2>
+                  <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                    <span>$72</span>
+                    <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                  </h1>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Tumeric plaid portland
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Hexagon neutra unicorn
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-2">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p class="flex items-center text-gray-600 mb-6">
+                    <span
+                      class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Mixtape chillwave tumeric
+                  </p>
+                  <button
+                    class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                  <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="contact" class="">
+        <section class="text-gray-600 body-font relative">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+              <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+                asymmetrical gentrify.</p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                    <input type="text" id="name" name="name"
+                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                    <input type="email" id="email" name="email"
+                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                <div class="p-2 w-full">
+                  <div class="relative">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                    <textarea id="message" name="message"
+                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                  </div>
+                </div>
+                <div class="p-2 w-full">
+                  <button
+                    class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                </div>
+                <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                  <a class="text-indigo-500">example@email.com</a>
+                  <p class="leading-normal my-5">49 Smith St.
+                    <br>Saint Cloud, MN 56301
+                  </p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                        viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-4 text-gray-500">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                      </svg>
+                    </a>
+                    <a class="ml-4 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-4 text-gray-500">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                        </path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+          
+    </div>
+        
+<!-- ライトエリアエンド-->
+  </main>
+<!-- footer start -->
+  <footer class="bg-white" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+
+  <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-16">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="text-white xl:col-span-1">
+        <a href="./index.html" class="text-lg font-bold tracking-tighter text-blue-600 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"> wickedblocks </a>
+        <p class="w-1/2 mt-2 text-sm text-gray-500">Wicked templates for wicked dev's</p>
+      </div>
+      <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-bold tracking-wider text-blue-500 uppercase">Navigation</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              <li>
+                <a href="./pricing.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Pricing </a>
+              </li>
+              <li>
+                <a href="./templates.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> All Templates </a>
+              </li>
+              <li>
+                <a href="./landing-pages.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Landing Pages </a>
+              </li>
+              <li>
+                <a href="./nextjs.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Next.js Templates </a>
+              </li>
+              <li>
+                <a href="./multi-page.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Full Templates </a>
+              </li>
+              <li>
+                <a href="./demos.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Free Templates </a>
+              </li>
+              <li>
+                <a href="./documentation.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Documentation </a>
+              </li>
+              <li>
+                <a href="./expo.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Customers </a>
+              </li>
+              <li>
+                <a href="https://wickedlabs.dev/" class="text-base font-normal text-gray-500 hover:text-blue-600"> About </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-12 md:mt-0">
+            <h3 class="text-sm font-bold tracking-wider text-blue-500 uppercase">UI/UX &amp; Dev</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              <li>
+                <a href="https://www.wickedblocks.dev" class="text-base font-normal text-gray-500 hover:text-blue-600"> Wickled Blocks </a>
+              </li>
+              <li>
+                <a href="https://www.wickedbackgrounds.com/" class="text-base font-normal text-gray-500 hover:text-blue-600"> Wicked Backgrounds </a>
+              </li>
+              <li>
+                <a href="https://wickedpopups.com/" class="text-base font-normal text-gray-500 hover:text-blue-600"> Wicked Popup's </a>
+              </li>
+              <li>
+                <a href="https://www.colorsandfonts.com/.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Colors &amp; Fonts </a>
+              </li>
+              <li>
+                <a href="https://30daysoftailwindcss.com/" class="text-base font-normal text-gray-500 hover:text-blue-600"> 30 Days Of Tailwind CSS</a>
+              </li>
+              <li>
+                <a href="https://www.wvsc.dev/.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Wicked VS Code</a>
+              </li>
+              <li>
+                <a href="https://www.brutalist.one/.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Brutalist Websites</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-bold tracking-wider text-blue-500 uppercase">Legal</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              <li>
+                <a href="./changelog.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Changelog </a>
+              </li>
+              <li>
+                <a href="./faq.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> FAQ </a>
+              </li>
+              <li>
+                <a href="./refund.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Refund </a>
+              </li>
+              <li>
+                <a href="./license.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> License </a>
+              </li>
+              <li>
+                <a href="./privacy.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Privacy Policy </a>
+              </li>
+              <li>
+                <a href="./terms.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Terms </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-12 md:mt-0">
+            <h3 class="text-sm font-bold tracking-wider text-blue-500 uppercase">Socials</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              <li>
+                <a href="https://twitter.com/WickedTemplates" class="text-base font-normal text-gray-500 hover:text-blue-600"> Twitter </a>
+              </li>
+              <li>
+                <a href="https://dribbble.com/MichaelAndreuzza.html" class="text-base font-normal text-gray-500 hover:text-blue-600"> Dribbble </a>
+              </li>
+              <li>
+                <a href="https://www.indiehackers.com/product/wicked-templates" class="text-base font-normal text-gray-500 hover:text-blue-600"> Indie Hackers </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="px-4 py-12 mx-auto bg-gray-50 max-w-7xl sm:px-6 lg:px-16">
+    <div class="flex flex-wrap items-baseline">
+      <span class="mt-2 text-sm font-light text-gray-500">
+        Copyright © 2020 - 2021
+        <a href="https://wickedlabs.dev" class="mx-2 text-wickedblue hover:text-gray-500" rel="noopener noreferrer">@wickedlabsHQ</a>. Since 2020
+      </span>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
+  <script src="js/5-2-4.js"></script>
+</body>
+</html>
